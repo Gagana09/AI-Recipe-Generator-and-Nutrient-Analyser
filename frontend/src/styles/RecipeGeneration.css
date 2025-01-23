@@ -1,0 +1,175 @@
+.recipe-generator-container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+  }
+  
+  .header-image {
+    background-image: url("../assests/banner\ -\ Copy.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 2rem;
+  }
+  
+  .main-content {
+    display: flex;
+    flex: 1;
+  }
+  
+  .left-section {
+    flex: 1;
+    padding: 20px;
+    background-color: #f4f4f4;
+  }
+  
+  .right-section {
+    flex: 2;
+    padding: 20px;
+    background-color: white;
+  }
+  
+  .buttons {
+    margin-top: 20px;
+  }
+  
+  button {
+    padding: 10px 15px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  /* Chatbot Icon */
+.chatbot-icon {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #ff5722;
+    color: white;
+    font-size: 1.5rem;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+  }
+  
+  .chatbot-icon:hover {
+    background-color: #e64a19;
+  }
+  
+
+  .recipe-generator-container .left-section {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    gap: 1rem; /* Add spacing between items */
+  }
+  
+  .left-section .dropdown-group {
+    display: flex;
+    flex-direction: column; /* Ensure label and select dropdown stack */
+  }
+  
+  .left-section label {
+    font-weight: bold;
+    margin-bottom: 0.5rem; /* Add spacing between label and input */
+  }
+  
+  .left-section select {
+    padding: 0.5rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+
+  /* General Button Styling */
+.left-section .buttons button {
+    padding: 0.8rem 1.5rem;
+    margin-top: 1rem;
+    font-size: 1rem;
+    font-weight: bold;
+    color: white;
+    background-color: #ff6f3c; /* Bright orange color */
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .left-section .buttons button:hover {
+    background-color: #ff3c3c; /* Slightly darker orange */
+    transform: scale(1.05); /* Grow slightly on hover */
+  }
+  
+  /* Button for adding ingredients (+ button) */
+  .left-section button {
+    padding: 0.5rem 1rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: white;
+    background-color: #ff6f3c;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    margin-top: 1rem;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .left-section button:hover {
+    background-color: #ff3c3c;
+    transform: scale(1.1);
+  }
+  
+  /* Chatbot Icon Styling */
+  .chatbot-icon {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #ff6f3c;
+    color: white;
+    font-size: 2rem;
+    padding: 0.8rem;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    animation: bounce 2s infinite;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+  
+  .chatbot-icon:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.3);
+  }
+  
+  /* Bounce Animation for Chatbot Icon */
+  @keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+      transform: translateY(0);
+    }
+    40% {
+      transform: translateY(-10px);
+    }
+    60% {
+      transform: translateY(-5px);
+    }
+  }
+
+  
+  /* Title Styling in Recipe Generation Page */
+.header-image h1 {
+    color: #af2802; /* Bright orange color for the title */
+    font-size: 2.5rem; /* Adjust the size if needed */
+    font-weight: bold;
+    text-align: center;
+    margin-top: 1.5rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Optional text shadow for depth */
+  }
+  
